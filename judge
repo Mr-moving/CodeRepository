@@ -1,0 +1,18 @@
+
+if (rs >= SHUTDOWN &&
+            ! (rs == SHUTDOWN &&
+               firstTask == null && ! workQueue.isEmpty())){}
+等同于
+rs >= SHUTDOWN && rs != SHUTDOWN
+rs >= SHUTDOWN && rs == SHUTDOWN && firstTask != null
+rs >= SHUTDOWN && rs == SHUTDOWN && firstTask  == null && workQueue.isEmpty()
+
+
+
+
+
+
+
+
+
+
